@@ -1,3 +1,5 @@
+//this is the twitter keys from my Twitter account StoneOceanConf, i will remove them
+//to people don't mess up, hope you understand...
 module.exports = {
 	consumer_key:         'am0imPdXtLZ0AeXd63LN94vOB',
   	consumer_secret:      'H8vBPEsHwCrhF0E1cBG1KdG2lCJmIovdeILTw6ep305glL7x1E',
