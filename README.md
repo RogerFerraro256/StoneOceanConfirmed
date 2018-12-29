@@ -4,7 +4,11 @@ this is a project for an autonomous Twitter posting bot, this don't need to be p
 
 # I commented the code to don't have problems during the tests, again, to make it work you should put your twitter keys in the configuration file
 
+___
+
 #About the packages i used:
+
+___
 
 #Twit
 Twit is a package that simplify the interation with twitter API, using lines like post, get and stream you can tweet the way you want, Twit is made by ttezel
