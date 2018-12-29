@@ -1,6 +1,6 @@
 {
-  "name": "twitterbot",
-  "version": "1.0.0",
+  "name": "stoneoceanbot",
+  "version": "0.6.4",
   "description": "Testing npm",
   "main": "bot.js",
   "scripts": {

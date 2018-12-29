@@ -15,7 +15,7 @@ var p = 1;
 var c = 1;
 
 function tweetIt() {
-
+	//this create a random number, was used to tweet a random number... maybe i use it on a future bot
 	var r = Math.floor(Math.random()*100);
 	
 
@@ -52,7 +52,7 @@ console.log(p);
 //var current_min = date.getMinutes();
 
 
-
+//this function was created to update time and tweet in the right time
 function hourCheck(){
 	
 	var hour = date.format(new Date(), 'hh');
@@ -62,14 +62,10 @@ function hourCheck(){
 	
 	var t = " ";
 
+	//just to have a good Debug
 	var txt = meridiem.concat(t,hour,t,min,t,sec);
 
-
-
-	if(meridiem=="p.m."){
-		console.log(meridiem);
-	}
-
+	//this check if the time is 12:00:01PM, if it is, then tweet.
 	if(hour==12 && min==00 && sec==01 && meridiem=="p.m."){
 		console.log("foi");
 		//tweetIt();
@@ -80,6 +76,7 @@ function hourCheck(){
 
 
 }
+//every 1 second it will call the hourcheck function.
 setInterval(hourCheck,1000);
 
 
