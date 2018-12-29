@@ -1,49 +1,86 @@
 //this is like a Sysout on java
 console.log('the bot is starting');
 
+
 //those are like imports on java
-var Twit = require('twit');
-var config = require('./config');
+//var Twit = require('twit');
+//var config = require('./config');
+let date = require('date-and-time')
+
 
 //putting the autentication on the T variable
-var T = new Twit(config);
+//var T = new Twit(config);
 
-//in portuguese we call that GAMBIARRA
 var p = 1;
 var c = 1;
 
-//function to tweet.
 function tweetIt() {
 
-	//this was for tweeting a random number, ignore it.
 	var r = Math.floor(Math.random()*100);
 	
 
 	//this is the actual tweet
-	var tweet={
-		status:'Day '+p+' nope.'
-	};
+//	var tweet={
+//		status:'Day '+p+' Nope.'
+//	};
 
 	//this will return the error
-	function tweeted(err,data,response){
-		if (err) {
-			console.log("error")
-			console.log(p)
-		}else{
-		console.log("it worked")
-		console.log(p)
-		}
-	};
+//	function tweeted(err,data,response){
+//		if (err) {
+//			console.log(err)
+//			console.log(p)
+//		}else{
+//		console.log("it worked")
+//		console.log(p)
+//		}
+//	};
 
 	//tweeting
-	T.post('statuses/update', tweet, tweeted);
+//	T.post('statuses/update', tweet, tweeted);
 
-	//auto incrementing, or, in portuguese GAMBIARRA DA BRABA
 	p= p+c;
 
 };
 
-//this will tweet every 24hours
-setInterval(tweetIt,1000*60*60*24);
+console.log(p);
+
 //tweetIt();
+
+//var date = new Date();
+//var current_hour = date.getHours();
+//var current_min = date.getMinutes();
+
+
+
+function hourCheck(){
+	
+	var hour = date.format(new Date(), 'hh');
+	var min = date.format(new Date(), 'mm')
+	var sec = date.format(new Date(), "ss")
+	var meridiem = date.format(new Date(),'A')
+	//console.log(hour);
+	//console.log(min);
+	//console.log(sec);
+	var t = " ";
+
+	var txt = meridiem.concat(t,hour,t,min,t,sec);
+
+
+
+	if(meridiem=="p.m."){
+		console.log(meridiem);
+	}
+
+	if(hour==12 && min==00 && sec==01 && meridiem=="p.m."){
+		console.log("foi");
+		//tweetIt();
+	}else{
+		console.log(txt);
+	}
+
+
+
+}
+setInterval(hourCheck,1000);
+
 
