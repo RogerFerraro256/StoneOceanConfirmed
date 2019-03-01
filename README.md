@@ -24,7 +24,28 @@ for this project i use
 $ node bot.js
 ```
 
-  
+
+
+## math operations
+
+There isn't too much to explain about how the math in this project works, but i wanted to use this on the update 
+
+Basically the only things that are important is the operation where we pick the time
+$$
+one day =24*60*60*1000
+$$
+then we pick the difference between the two days
+$$
+dif=firstDay-secondDay
+$$
+and finally we transform the dif into a number of days
+$$
+x=dif/oneday
+$$
+
+
+
+
 
 ## About the packages i used:
 
@@ -40,7 +61,7 @@ On this project, since i have to post on the right time, i use this, if you don'
 
 ## License
 
-MIT
+**MIT**
 
 
 **Free Software, Hell Yeah!**
