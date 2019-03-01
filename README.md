@@ -26,30 +26,24 @@ $ node bot.js
 
 
 
+
+
+
 ## math operations
 
 There isn't too much to explain about how the math in this project works, but i wanted to use this on the update 
 
 Basically the only things that are important is the operation where we pick the time
 
-$$
-one day =24*60*60*1000
-$$
+![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B120%7D%20%5Clarge%20one%20day%20%3D24*60*60*1000)
 
 then we pick the difference between the two days
 
-$$
-dif=firstDay-secondDay
-$$
+![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B120%7D%20%5Clarge%20dif%3DfirstDay-secondDay)
 
 and finally we transform the dif into a number of days
 
-$$
-x=dif/oneday
-$$
-
-
-
+![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B120%7D%20%5Clarge%20x%3Ddif/oneday)
 
 
 ## About the packages i used:
@@ -66,7 +60,7 @@ On this project, since i have to post on the right time, i use this, if you don'
 
 ## License
 
-**MIT**
+MIT
 
 
 **Free Software, Hell Yeah!**
