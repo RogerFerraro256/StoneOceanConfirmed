@@ -2,6 +2,8 @@
 
 # StoneOceanConfirmed
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a0b36049271740afba544b65d17b30d1)](https://app.codacy.com/app/RogerFerraro256/StoneOceanConfirmed?utm_source=github.com&utm_medium=referral&utm_content=RogerFerraro256/StoneOceanConfirmed&utm_campaign=Badge_Grade_Dashboard)
+
   
 
 this is a project for an autonomous Twitter posting bot, this don't need to be pretty or have an actual site, this will work on Heroku, and this repository is just to save my code
