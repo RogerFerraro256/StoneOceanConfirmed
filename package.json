@@ -1,6 +1,6 @@
 {
   "name": "stoneoceanbot",
-  "version": "0.6.4",
+  "version": "1.6.8",
   "description": "Testing npm",
   "main": "bot.js",
   "scripts": {
